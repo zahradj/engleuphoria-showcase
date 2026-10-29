@@ -20,6 +20,37 @@ Children learning English online usually get one of two things: a game with no t
 - **Three languages for families:** Arabic, French and English.
 - **Safe by design:** parent-managed child profiles, calm content, no public rankings, no pressure.
 
+## Live demo
+
+The platform is deployed and public: **https://www.engleuphoria.com**
+
+Lessons and dashboards need a signed-in account. A ready-to-use **test account** for judges (child, parent and teacher views) is supplied in the competition submission form, so no credentials are stored in this repository.
+
+## Run it locally
+
+The full application is a private codebase, so this repository does not build on its own. For reference, this is how the real app runs:
+
+**Stack:** React 18 · TypeScript · Vite · Tailwind CSS · Framer Motion · Supabase (accounts, database, realtime, server functions).
+
+```bash
+npm install
+npm run dev        # http://localhost:8080
+npm test           # unit tests
+```
+
+The app needs a few private environment values (a backend URL and a public client key) in a local `.env` file. These are not published. Access to the full source can be arranged with the founder under an agreement: founder@engleuphoria.com.
+
+## Who built what
+
+| Part | Built by |
+|---|---|
+| Product idea, curriculum and lesson design, teaching method | Fatima Zahra Djaanine |
+| Web app: child, parent, teacher spaces and live classroom | Fatima Zahra Djaanine, working with an AI coding assistant (Claude Code) |
+| Content: story worlds, voices, pictures | Fatima Zahra Djaanine, using AI generation tools, with every item reviewed and approved by hand |
+| Quality rules, child-safety checks, testing | Fatima Zahra Djaanine |
+
+EnglEuphoria is a solo-founder project. AI tools speed up the work; every design decision and release is made and checked by the founder.
+
 ## Screens
 
 | | |
