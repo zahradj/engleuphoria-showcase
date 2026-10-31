@@ -1,6 +1,6 @@
 # EnglEuphoria
 
-**Live, story-led English lessons for children, taught one to one, with AI used where it helps and humans where it matters.**
+**Live English lessons with real teachers, plus game-like story lessons, for children, teens and adults, with AI used where it helps and humans where it matters.**
 
 Founder: Fatima Zahra Djaanine · founder@engleuphoria.com · [www.engleuphoria.com](https://www.engleuphoria.com)
 
@@ -10,13 +10,13 @@ Founder: Fatima Zahra Djaanine · founder@engleuphoria.com · [www.engleuphoria.
 
 ## The problem
 
-Children learning English online usually get one of two things: a game with no teacher, or a video call with no structure. Families in many regions also struggle to find lessons in their own language, at fair prices, with a safe place for the child.
+People learning English online usually get one of two things: a game with no teacher, or a video call with no structure. Families and adults in many regions also struggle to find lessons in their own language, at fair prices, and, for children, in a safe place.
 
 ## What EnglEuphoria does
 
-- **Live, one-to-one lessons** with a real teacher, built around a story world with a small cast of friendly characters.
+- **Live lessons** with a real teacher, built around a story world with a small cast of friendly characters.
 - **A complete curriculum**, from first words (Pre-A1) to upper B2, with the same speaking-first method at every level.
-- **Learning spaces by age:** Playground for young children, Academy for teens, and a space for adults.
+- **Learning spaces by age:** Playground for children, Academy for teens, and Success for adults.
 - **Three spaces in one platform:** child, parent and teacher, each with its own simple screen.
 - **Six languages for families:** English, Arabic, French, Spanish, Italian and Turkish.
 - **Safe by design:** parent-managed child profiles, calm content, no public rankings, no pressure.
@@ -32,7 +32,7 @@ To see the real product, open the live site: **https://www.engleuphoria.com**
 3. Parent view: see several children and their progress in one dashboard.
 4. Teacher view: open the lesson library and the live classroom.
 
-No credentials are stored in this repository.
+A walkthrough video is included in the competition submission. No credentials are stored in this repository.
 
 ## How the real app runs (for reference)
 
