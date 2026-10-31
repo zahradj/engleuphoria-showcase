@@ -16,19 +16,27 @@ Children learning English online usually get one of two things: a game with no t
 
 - **Live, one-to-one lessons** with a real teacher, built around a story world with a small cast of friendly characters.
 - **A complete curriculum**, from first words (Pre-A1) to upper B2, with the same speaking-first method at every level.
+- **Learning spaces by age:** Playground for young children, Academy for teens, and a space for adults.
 - **Three spaces in one platform:** child, parent and teacher, each with its own simple screen.
-- **Three languages for families:** Arabic, French and English.
+- **Six languages for families:** English, Arabic, French, Spanish, Italian and Turkish.
 - **Safe by design:** parent-managed child profiles, calm content, no public rankings, no pressure.
 
-## Live demo
+## How to see it
 
-The platform is deployed and public: **https://www.engleuphoria.com**
+**This repository does not run, on purpose.** It holds the README, three code excerpts and screenshots. The full code is private.
 
-Lessons and dashboards need a signed-in account. A ready-to-use **test account** for judges (child, parent and teacher views) is supplied in the competition submission form, so no credentials are stored in this repository.
+To see the real product, open the live site: **https://www.engleuphoria.com**
 
-## Run it locally
+1. Sign in with the **judge test accounts** (child, parent and teacher) given in the competition submission form.
+2. Child view: open a lesson from the learning map.
+3. Parent view: see several children and their progress in one dashboard.
+4. Teacher view: open the lesson library and the live classroom.
 
-The full application is a private codebase, so this repository does not build on its own. For reference, this is how the real app runs:
+No credentials are stored in this repository.
+
+## How the real app runs (for reference)
+
+The full application is a private codebase, so the commands below will not work from this repository. They show how the real app is set up:
 
 **Stack:** React 18 · TypeScript · Vite · Tailwind CSS · Framer Motion · Supabase (accounts, database, realtime, server functions).
 
@@ -61,6 +69,8 @@ EnglEuphoria is a solo-founder project. AI tools speed up the work; every design
 | Parent dashboard: several children, each with their own profile | A lesson opens in a story world |
 | ![Place and speak](docs/screenshots/lesson-place-and-speak.jpg) | ![Match and sort](docs/screenshots/lesson-match.jpg) |
 | Place a character, then say where he is | Match and sort activity |
+| ![Sound activity](docs/screenshots/lesson-sound-activity.jpg) | |
+| Sound activity: tap the magic boxes to find words with the sound | |
 
 Student names are not shown in any screenshot.
 
@@ -87,7 +97,9 @@ See [docs/architecture.md](docs/architecture.md).
 
 ## Code samples
 
-Two short, self-contained files show the style and care behind the platform:
+Three short files show the style and care behind the platform:
+
+- [`code-samples/speechPolicy.ts`](code-samples/speechPolicy.ts): the rules that clean every line before it is spoken (numbers, abbreviations, symbols, emoji) and flag sounds a voice cannot say. The list of approved voices is private and removed.
 
 - [`code-samples/noBrowserVoice.ts`](code-samples/noBrowserVoice.ts): a startup guard that reroutes any device text-to-speech call to the platform's recorded voices, so no child ever hears a wrong accent.
 - [`code-samples/DialoguePlate.tsx`](code-samples/DialoguePlate.tsx): the accessible, theme-aware dialogue component used across story lessons.
@@ -97,7 +109,20 @@ They are excerpts: some imports point to private modules, so they will not build
 ## Status
 
 - **Pre-A1:** 72 lessons in 10 units, built on the same unit structure used across the course.
+- **Academy (teens):** first series in progress, with 60-minute lessons.
 - **Launched** in October 2026.
+
+## Before and during the programme
+
+EnglEuphoria was an existing platform before the programme, with student, teacher and admin dashboards, a live classroom, a credit system and the first Playground lessons. During the programme I added the Academy hub, family accounts with a parent-managed child picker, the recorded native-voice system with its pronunciation policy, a gated pipeline for lesson art and video, pages in six languages and a homework quest system.
+
+## Next three months
+
+1. Finish Unit 1 of the Academy A1 series (six 60-minute lessons) for teens.
+2. Add speech recognition so learners get instant feedback on pronunciation.
+3. Launch a shared family credit wallet, so parents can share lessons across their children.
+4. Pilot with real families and teachers, measure lesson completion and speaking time, and fix what the data shows.
+5. Pre-generate all Academy and adult-space audio so lessons load fast and cost less to run.
 
 ## What is not in this repository
 
